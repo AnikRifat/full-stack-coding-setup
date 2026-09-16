@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize This Project"
+  short_description: "Initialize a specific software project safely"
+  default_prompt: "Use $init-this-project to initialize this project, preserve its instructions, and verify local setup."
