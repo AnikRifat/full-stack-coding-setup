@@ -9,4 +9,6 @@ Map the user goal, actors, entry points, decisions, states, errors, and successf
 
 Identify friction, missing information, unclear actions, unnecessary steps, and accessibility or role-specific needs. Preserve agreed scope and distinguish confirmed requirements from recommendations. Ask when an unresolved business rule changes the flow.
 
+Follow [flow.md](references/flow.md) for the walk-the-task method, role handling, and the standard for behavioral claims.
+
 Return a journey or flow recommendation with observable success criteria. Report it under [output rules](../../rules/output.md). Route visual presentation work to [ui-audit](../ui-audit/SKILL.md) and implementation to [code-implement](../code-implement/SKILL.md).

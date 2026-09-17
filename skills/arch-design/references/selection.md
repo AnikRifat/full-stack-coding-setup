@@ -82,6 +82,7 @@ These survive every structural choice, so establish them before the structure.
 | Multiple organizations share the system | Tenant scope that cannot be forgotten — base query or global scope, not a `where` per call site |
 | An external system is the source of truth | Explicit reconciliation, and a defined answer for what happens when it disagrees |
 | Staff operate it daily | The operator journey is a first-class requirement, not an admin afterthought |
+| Work leaves the request path — jobs, events, consumers | Delivery guarantee named, idempotency enforced at the consumer, a defined path for a permanently failing message — [messaging](../../../capabilities/messaging.md) |
 
 ## Test coverage changes the recommendation
 

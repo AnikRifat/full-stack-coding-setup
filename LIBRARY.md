@@ -41,6 +41,7 @@ flowchart TD
 - [Commands](commands/README.md) map `/skill-name` triggers to task skills.
 - [Agent roles](agents/README.md) define bounded workers. A skill is a method; an agent is a worker assigned to use one.
 - [Tools](tools/README.md) are inspected at runtime rather than presumed in the library.
+- [References](references/behavioral-ux-sources.md) hold source provenance notes. They are not loaded by any skill; read one when a recommendation is about to lean on an outside source.
 - A project's own instructions and observed code override these global defaults wherever they conflict.
 
 ## Defaults and boundaries

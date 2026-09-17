@@ -20,6 +20,8 @@ Prefer changes that fit the requested behavior and the existing architecture. Pr
 
 For money-related behavior, explicitly choose the more defensive option and verify the relevant invariants from the actual provider and project. Consult [domains.md](../../loop-delivery/references/domains.md) when needed; do not invent webhook or financial guarantees.
 
+When the change dispatches a job, publishes an event, or adds a consumer, read the [messaging capability](../../../capabilities/messaging.md) before writing it. Dispatching inside an open transaction, a read-then-write used as idempotency, and an unbounded retry are the three that reach production.
+
 Verify the behavior at a level appropriate to the change. Use existing required checks, and add focused regression coverage when it protects a meaningful failure mode. Do not add tests that only repeat the wording or structure of the implementation.
 
 Report what changed, why, relevant verification, and any material limitation. Do not claim an unexecuted check passed.
