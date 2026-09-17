@@ -1,4 +1,4 @@
 interface:
   display_name: "Implement Code"
   short_description: "Implement a scoped change safely"
-  default_prompt: "Use $code-implement to implement this agreed change with project conventions and relevant checks."
+  default_prompt: "Use /code-implement to implement this agreed change with project conventions and relevant checks."

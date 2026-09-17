@@ -1,4 +1,4 @@
 interface:
-  display_name: "Initialize This Project"
-  short_description: "Initialize a specific software project safely"
-  default_prompt: "Use $project-init to initialize this project, preserve its instructions, and verify local setup."
+  display_name: "Establish This Project"
+  short_description: "Set up a new project, or adopt an existing one safely"
+  default_prompt: "Use /project-init on this folder: scaffold it if blank, adopt it if it already holds an application, preserve its instructions, and verify locally."

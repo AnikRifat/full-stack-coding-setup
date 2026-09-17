@@ -1,4 +1,4 @@
 interface:
   display_name: "Investigate a Bug"
   short_description: "Investigate and repair a supported failure"
-  default_prompt: "Use $bug-investigate to reproduce, diagnose, repair, and verify this failure."
+  default_prompt: "Use /bug-investigate to reproduce, diagnose, repair, and verify this failure."

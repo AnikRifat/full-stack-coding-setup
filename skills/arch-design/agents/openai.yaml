@@ -1,4 +1,4 @@
 interface:
   display_name: "Architecture Design"
   short_description: "Design architecture from project context"
-  default_prompt: "Use $arch-design to design the smallest architecture that meets this project goal."
+  default_prompt: "Use /arch-design to design the smallest architecture that meets this project goal."

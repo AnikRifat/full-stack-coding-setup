@@ -1,4 +1,4 @@
 interface:
   display_name: "Audit UI"
   short_description: "Audit visual interface quality and accessibility"
-  default_prompt: "Use $ui-audit to audit this interface for visual clarity, consistency, and accessibility."
+  default_prompt: "Use /ui-audit to audit this interface for visual clarity, consistency, and accessibility."

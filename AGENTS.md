@@ -5,7 +5,7 @@ This workspace contains reusable agent instructions for Anik's software and prod
 ## Layout
 
 - `LIBRARY.md`: purpose map, scope, and expansion criteria.
-- `skills/loop-delivery/`: goal-driven lifecycle loop, interaction, sub-agent coordination, and shared context contract. Invoke `$loop-delivery`; it replaces the former `zero-to-production` coordinator name.
+- `skills/loop-delivery/`: goal-driven lifecycle loop, interaction, sub-agent coordination, and shared context contract. Invoke `/loop-delivery`; it replaces the former `zero-to-production` coordinator name.
 - `skills/`: task-oriented skills for lifecycle, initialization, planning, architecture, implementation, debugging, verification, review, UI, UX, and autonomous audit-and-fix work.
 - `rules/`: reusable global constraints, including `output.md`, which bounds how much a skill reads, carries, and reports. A project's own instructions and its observed code win over them where they conflict, so skills inspect project context before applying a global default.
 - `capabilities/`: stack-specific guidance selected from project context.

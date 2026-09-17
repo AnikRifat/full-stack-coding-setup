@@ -19,34 +19,34 @@ It is not a project template and it generates no application code by itself. It 
 
 | I am doing this | Use |
 | --- | --- |
-| Turning a goal into increments with acceptance criteria | `$delivery-plan` |
-| Deciding a boundary, data flow, integration, or scale question | `$arch-design` |
-| Writing the agreed change | `$code-implement` |
-| Chasing a bug or regression to its root cause | `$bug-investigate` |
-| Proving behavior works, or preparing release evidence | `$behavior-verify` |
-| Reviewing a change before it lands | `$change-review` |
-| Auditing an interface's visual clarity, consistency, accessibility | `$ui-audit` |
-| Fixing a journey, task flow, or usability problem | `$flow-design` |
+| Turning a goal into increments with acceptance criteria | `/delivery-plan` |
+| Deciding a boundary, data flow, integration, or scale question | `/arch-design` |
+| Writing the agreed change | `/code-implement` |
+| Chasing a bug or regression to its root cause | `/bug-investigate` |
+| Proving behavior works, or preparing release evidence | `/behavior-verify` |
+| Reviewing a change before it lands | `/change-review` |
+| Auditing an interface's visual clarity, consistency, accessibility | `/ui-audit` |
+| Fixing a journey, task flow, or usability problem | `/flow-design` |
 
-`$ui-audit` is how it looks and how it is built; `$flow-design` is what the user is trying to do. They stay separate on purpose.
+`/ui-audit` is how it looks and how it is built; `/flow-design` is what the user is trying to do. They stay separate on purpose.
 
 ### Customer-facing
 
 | I am doing this | Use |
 | --- | --- |
-| Answering a customer's confusion, bug report, or enhancement request | `$support-resolve` |
+| Answering a customer's confusion, bug report, or enhancement request | `/support-resolve` |
 
-`$support-resolve` classifies the request as confusion, bug, or enhancement, diagnoses it from real code, routes the repair to the task skills above, and answers in two separated parts: a client reply in business language, and an internal record with root cause, evidence, verification limits, and follow-up. It reports the reply; it does not send it, and it promises no date, refund, or remedy on your behalf.
+`/support-resolve` classifies the request as confusion, bug, or enhancement, diagnoses it from real code, routes the repair to the task skills above, and answers in two separated parts: a client reply in business language, and an internal record with root cause, evidence, verification limits, and follow-up. It reports the reply; it does not send it, and it promises no date, refund, or remedy on your behalf.
 
 ### Loops — run until done
 
 | I want this run end to end | Use | Cycle |
 | --- | --- | --- |
-| An idea taken to verified, deploy-ready | `$loop-delivery` | goal → inspect → ask → delegate → verify → reassess |
-| A codebase audited, repaired, re-audited | `$loop-code-audit` | inspect → audit → synthesize → fix → verify → re-audit |
-| An interface audited, fixed, re-checked | `$loop-interface-audit` | resolve context → audit → synthesize → fix → verify → reassess |
+| An idea taken to verified, deploy-ready | `/loop-delivery` | goal → inspect → ask → delegate → verify → reassess |
+| A codebase audited, repaired, re-audited | `/loop-code-audit` | inspect → audit → synthesize → fix → verify → re-audit |
+| An interface audited, fixed, re-checked | `/loop-interface-audit` | resolve context → audit → synthesize → fix → verify → reassess |
 
-`$loop-delivery` is the only lifecycle loop and can reach every other skill. The other two are bounded: they audit and repair within their own domain. All three ask material questions as soon as they surface rather than guessing and reporting later.
+`/loop-delivery` is the only lifecycle loop and can reach every other skill. The other two are bounded: they audit and repair within their own domain. All three ask material questions as soon as they surface rather than guessing and reporting later.
 
 Actual deployment is outside all of them. They finish at a verified, deploy-ready handover.
 
@@ -54,8 +54,9 @@ Actual deployment is outside all of them. They finish at a verified, deploy-read
 
 | I am doing this | Use |
 | --- | --- |
-| Preparing this machine's Codex/Claude scratch environment | `$machine-init` |
-| Initializing an application in a blank or instruction-only folder | `$project-init` |
+| Preparing this machine's Codex/Claude scratch environment | `/machine-init` |
+| Initializing an application in a blank or instruction-only folder | `/project-init` |
+| Picking up an existing or unfamiliar codebase before working in it | `/project-init` |
 
 ## Install
 

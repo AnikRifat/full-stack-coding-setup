@@ -1,4 +1,4 @@
 interface:
   display_name: "Plan Do"
   short_description: "Create goal-driven plans for delivery"
-  default_prompt: "Use $delivery-plan to turn this goal into acceptance criteria, ordered increments, and key decisions."
+  default_prompt: "Use /delivery-plan to turn this goal into acceptance criteria, ordered increments, and key decisions."

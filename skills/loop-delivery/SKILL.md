@@ -30,7 +30,7 @@ Read [profile.md](references/profile.md) for confirmed defaults and unknowns. Pr
 | Outcome | Micro-skill |
 | --- | --- |
 | PC, Codex, or Claude scratch-environment setup | [machine-init](../machine-init/SKILL.md) |
-| Blank or instruction-only project setup | [project-init](../project-init/SKILL.md) |
+| Blank or instruction-only project setup, or adopting an unfamiliar existing codebase | [project-init](../project-init/SKILL.md) |
 | Client discovery, reference adaptation, MVP scope, iteration | This coordinator, using the [product method](references/product-method.md) |
 | Goal-driven acceptance criteria, executable increments, dependencies | [delivery-plan](../delivery-plan/SKILL.md) |
 | Architecture decisions | [arch-design](../arch-design/SKILL.md) |

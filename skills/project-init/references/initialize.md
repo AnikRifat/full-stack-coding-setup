@@ -8,13 +8,37 @@ Source: Anik requested that he can invoke `loop-delivery` in a blank folder to i
 
 Inspect the actual working directory, including hidden files and inherited instructions. Distinguish a genuinely empty folder, a folder containing only agent instructions or planning notes, and an existing project. Do not run a new-project generator over an existing application.
 
+## Adopting an existing project
+
+When the folder already holds an application, this skill learns it rather than creating one. Nothing is scaffolded, no dependency is added, and no convention is imposed.
+
+Read the manifests first — `composer.json`, `package.json`, `requirements.txt`, `go.mod`, and their lockfiles — for the real stack and the pinned versions. A framework's current documentation is wrong guidance for a project two majors behind; match the version that is actually installed.
+
+Derive the commands that already exist rather than proposing new ones: scripts in the manifest, `Makefile`, `composer.json` scripts, CI workflow files, `docker-compose.yml`, `Procfile`. Report how this project is run, tested, and built in its own terms.
+
+Learn the conventions from the code, not from a style guide. Read enough of the largest and most-recently-changed modules to see the directory layout, naming, layering, error handling, and test style the project actually uses. Where they conflict with this library's defaults, the project wins. Where the project is internally inconsistent, say so rather than silently picking a side.
+
+Establish the data layer: engine, migration tool, schema shape, and where queries live. Read [databases](../../../capabilities/databases.md) when the work will touch it.
+
+Identify the integration and configuration surface: `.env.example`, config files, external services, queues, and scheduled work. Never read, print, or copy real secret values — the variable names and their purpose are the deliverable.
+
+Check the repository's own history for what is under active change and what is untouched. Recent commit subjects and the files they touch reveal the project's live areas faster than reading it whole.
+
+Verify before claiming understanding. Run the project's existing checks — its test command, linter, or type check — and report what actually passed, what failed, and what could not be run and why. An adoption summary with no executed check is a reading, not a verification.
+
+Write the findings to the project's own `AGENTS.md` or `CLAUDE.md`, merging with what is there rather than replacing it. Record the stack and versions, run and test commands, architecture, conventions, data layer, integrations, and the areas deliberately not explored. Label an unknown as unknown.
+
+Then stop. Adoption ends at a verified understanding and a written record. Any code change is a separate request routed to [code-implement](../../code-implement/SKILL.md), [bug-investigate](../../bug-investigate/SKILL.md), or [arch-design](../../arch-design/SKILL.md).
+
+## Scaffolding a new project
+
 Reuse the supplied brief. If the folder is blank and no brief exists, ask what is being built and for whom, then establish the core journey, audience, product type, and domain. Do not invent a demo product merely to initialize something.
 
 Recommend the smallest suitable stack and architecture. For a business portfolio without a different choice, use Laravel + Blade + Livewire. For other product types, apply the Laravel backend default where it fits, considering actual platform, workflow, data, and integration requirements. Consider Next.js through its [capability guidance](../../../capabilities/frameworks/nextjs.md) when the scalability and frontend requirements justify it. Existing or explicitly chosen stacks take precedence.
 
 Establish the application's name when a generator requires it and verify available runtimes and package managers. Ask about hosting capabilities when they affect runtime or architecture choices, even though actual deployment is excluded. Do not install machine-wide runtimes or rewrite shell configuration as a side effect of project initialization.
 
-## Scaffold with native tools
+### Scaffold with native tools
 
 Use the current official installer or package manager for the chosen stack. Read its local help and version-matched official documentation rather than assuming flags or silently pinning this skill to a framework release.
 
