@@ -9,10 +9,10 @@ set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 src="$root/skills"
-# Skills link to ../../rules/ and ../../capabilities/. Claude follows the symlink back
-# into this repo and resolves them there; the copies cannot, so those two directories
-# are copied alongside or every such link dangles in Codex and Antigravity.
-shared=(rules capabilities)
+# Skills link to ../../rules/, ../../capabilities/ and ../../references/. Claude follows
+# the symlink back into this repo and resolves them there; the copies cannot, so these
+# directories are copied alongside or every such link dangles in Codex and Antigravity.
+shared=(rules capabilities references)
 claude="$HOME/.claude/skills"
 copies=("$HOME/.codex/skills")
 [ -d "$HOME/.gemini" ] && copies+=("$HOME/.gemini/config/skills")

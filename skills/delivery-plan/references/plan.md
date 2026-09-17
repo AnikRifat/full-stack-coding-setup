@@ -1,6 +1,6 @@
 # Planning decisions
 
-Status: proposed starting method. Anik's preferred planning format and estimation habits are not yet established.
+Status: proposed starting method, with one point confirmed — Anik does not want numeric estimates. Plans carry ordered increments, acceptance criteria, and dependencies. No hours, no points, no day ranges; sequence and scope are the output. Confirmed 2026-09-17.
 
 Translate the requested outcome into work that can be executed and reviewed. Read the repository and its project instructions for an existing codebase. Preserve any agreed MVP brief and acceptance criteria instead of rediscovering the product for a narrow feature.
 
@@ -13,7 +13,7 @@ For the client-product paths captured in the coordinator's [product method](../.
 - Resolve routine choices from project conventions and evidence. Give Anik a recommendation when a trade-off materially affects scope, architecture, cost, or delivery.
 - Organize larger work into verifiable increments. Choose the level of detail based on uncertainty and task size, rather than imposing a fixed phase count.
 - Identify where data changes, integration behavior, authorization, or deployment constraints require extra care.
-- Label assumptions. Do not fabricate estimates, business requirements, deployment targets, or missing repository files.
+- Label assumptions. Do not fabricate business requirements, deployment targets, or missing repository files. Do not supply a duration even when asked casually; say what is sequenced and what it depends on, and name the unknown that would have to be resolved before anyone could size it.
 
 For a backend choice without an established stack, start from Anik's Laravel preference. If the project is Node/React, plan within that stack. Ask about hosting only when it matters and has not already been established.
 

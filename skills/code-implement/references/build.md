@@ -9,7 +9,7 @@ Apply [simplicity](../../../rules/simplicity.md), [coding rules](../../../rules/
 ## Stack decisions
 
 - In an existing PHP/Laravel project, use its established Laravel idioms and framework version.
-- In an existing Node/React project, use its established JavaScript or TypeScript patterns. Explain unfamiliar design trade-offs without treating Anik as a beginner.
+- In an existing Node/React project, use its established JavaScript or TypeScript patterns and the [Node and React capability](../../../capabilities/frameworks/node-react.md). Explain unfamiliar design trade-offs without treating Anik as a beginner.
 - For a new backend with no chosen stack, recommend Laravel first when it fits the requirements. Explain material reasons to choose something else rather than silently switching.
 - For a new business portfolio without another choice, default to Laravel + Blade + Livewire using the [Laravel capability](../../../capabilities/frameworks/laravel-livewire.md). Consider the [Next.js capability](../../../capabilities/frameworks/nextjs.md) when actual scalability and frontend requirements justify it, with the trade-off explained.
 - Check the intended deployment environment before making a decision that depends on its capabilities. Reuse the answer if it is already known.
