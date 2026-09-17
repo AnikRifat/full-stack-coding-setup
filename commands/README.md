@@ -10,6 +10,7 @@ Type `/<name>` to invoke one. Claude Code also selects a skill on its own when t
 | `/loop-interface-audit` | Autonomous UI/UX audit, fix, and verification loop |
 | `/loop-code-audit` | Autonomous code audit, repair, and verification loop |
 | `/machine-init` / `/project-init` | PC setup, or project setup and adoption |
+| `/update-setup` | Git update check and runtime skills refresh |
 | `/delivery-plan` | Goal-driven plan |
 | `/arch-design` | Architecture decision |
 | `/code-implement` | Scoped implementation |

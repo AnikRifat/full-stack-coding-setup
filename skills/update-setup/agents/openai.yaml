@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Setup"
+  short_description: "Check Git and update Anik's skill library across runtimes"
+  default_prompt: "Use /update-setup to check for git updates, pull changes, and refresh the installed skill library across all AI runtimes."

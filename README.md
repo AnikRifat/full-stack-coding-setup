@@ -1,6 +1,6 @@
 # Full-stack coding setup
 
-A skill library for Anik's day-to-day development work: one named method per kind of job, so a request lands in the right one instead of being improvised each time. Fourteen skills, shared rules, and stack knowledge selected from the project actually open.
+A skill library for Anik's day-to-day development work: one named method per kind of job, so a request lands in the right one instead of being improvised each time. Fifteen skills, shared rules, and stack knowledge selected from the project actually open.
 
 It is not a project template and it generates no application code by itself. It decides *how* the work is done: what to inspect first, what to ask, what counts as verified, and where a task stops.
 
@@ -57,6 +57,7 @@ Actual deployment is outside all of them. They finish at a verified, deploy-read
 | Preparing this machine's Codex/Claude scratch environment | `/machine-init` |
 | Initializing an application in a blank or instruction-only folder | `/project-init` |
 | Picking up an existing or unfamiliar codebase before working in it | `/project-init` |
+| Checking Git for updates and refreshing installed skills | `/update-setup` |
 
 ## Install
 

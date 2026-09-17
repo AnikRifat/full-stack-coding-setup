@@ -21,6 +21,7 @@ flowchart TD
 | [loop-code-audit](skills/loop-code-audit/SKILL.md) | Autonomous code audit, repair, and verification loop |
 | [machine-init](skills/machine-init/SKILL.md) | Global Codex/Claude scratch environment |
 | [project-init](skills/project-init/SKILL.md) | Project setup, and adoption of an existing codebase |
+| [update-setup](skills/update-setup/SKILL.md) | Git update check, release sync, and runtime skills refresh |
 | [delivery-plan](skills/delivery-plan/SKILL.md) | Goal-driven delivery planning |
 | [arch-design](skills/arch-design/SKILL.md) | Architecture decisions |
 | [code-implement](skills/code-implement/SKILL.md) | Scoped implementation |
