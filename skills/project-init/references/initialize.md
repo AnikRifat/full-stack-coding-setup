@@ -55,6 +55,21 @@ Recommend the smallest suitable stack and architecture. For a business portfolio
 
 Establish the application's name when a generator requires it and verify available runtimes and package managers. Ask about hosting capabilities when they affect runtime or architecture choices, even though actual deployment is excluded. Do not install machine-wide runtimes or rewrite shell configuration as a side effect of project initialization.
 
+### Prefer the house starter when it fits
+
+`~/Development/boilarplate` is Anik's own Laravel 13 + Livewire 4 + Next.js 16 starter:
+session admin, users and employees, config/database roles with personal denials, settings,
+a central `MediaService`, and a versioned `/api/v1`. It carries no domain, tenancy,
+payments, or messaging. When the brief needs an admin surface plus a public frontend, start
+from a copy of it rather than generating both applications and re-deriving auth, roles, and
+media — that is days of work already verified by its own `npm run check`.
+
+Copy it, remove its `.git`, and initialize a new repository; never develop a product inside
+the starter itself. Delete `backend/database/seeders/DemoSeeder.php` and the `demo` script
+as its README instructs. Do not reach for it when the product needs no admin (a pure
+brochure site) or no Node frontend — a Laravel + Blade + Livewire monolith is smaller, and
+`selection.md` says every added part needs a named requirement.
+
 ### Scaffold with native tools
 
 Use the current official installer or package manager for the chosen stack. Read its local help and version-matched official documentation rather than assuming flags or silently pinning this skill to a framework release.

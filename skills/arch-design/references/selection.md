@@ -64,6 +64,12 @@ distinct: a logistics company may need a corporate site, an operational system, 
 A product can be more than one of these. Say which part is which rather than picking one
 label for the whole engagement.
 
+When the chosen shape is "Laravel admin plus a Next.js public frontend", the house starter
+at `~/Development/boilarplate` already is that shape, with auth, roles, settings and media
+built and tested — see
+[project-init](../../project-init/references/initialize.md). Starting from it is not a move
+away from the default; generating both applications from scratch is the expensive path.
+
 ## What each domain obliges regardless of shape
 
 These survive every structural choice, so establish them before the structure.
