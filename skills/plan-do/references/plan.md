@@ -21,6 +21,6 @@ For a backend choice without an established stack, start from Anik's Laravel pre
 
 For substantial work, show the goal, acceptance criteria, recommended approach, ordered increments, material risks, validation, and unresolved decisions. Record alternatives only when they explain the recommendation.
 
-A plan should make the next action clear. Producing a plan does not by itself authorize implementation, purchasing, publishing, or deployment. If implementation is requested, continue with [Labour](../../labour/SKILL.md) within that scope.
+A plan should make the next action clear. Producing a plan does not by itself authorize implementation, purchasing, publishing, or deployment. If implementation is requested, continue with [code-implement](../../code-implement/SKILL.md) within that scope.
 
 When [loop-zero-to-production](../../loop-zero-to-production/SKILL.md) owns an end-to-end task, planning is an intermediate result. Preserve context through [the shared handoff](../../loop-zero-to-production/references/handoff.md) and continue into the next requested stage without asking whether to do already authorized work. A planning-only request still finishes at its plan.

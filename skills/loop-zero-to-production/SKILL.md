@@ -33,7 +33,15 @@ Read [profile.md](references/profile.md) for confirmed defaults and unknowns. Pr
 | Blank or instruction-only project setup | [init-this-project](../init-this-project/SKILL.md) |
 | Client discovery, reference adaptation, MVP scope, iteration | This coordinator, using the [product method](references/product-method.md) |
 | Goal-driven acceptance criteria, executable increments, dependencies | [plan-do](../plan-do/SKILL.md) |
-| Architecture, implementation, debugging, and code review | [labour](../labour/SKILL.md) |
+| Architecture decisions | [arch-design](../arch-design/SKILL.md) |
+| Scoped implementation | [code-implement](../code-implement/SKILL.md) |
+| Bug investigation and repair | [debug-investigate](../debug-investigate/SKILL.md) |
+| Behavior verification | [test-verify](../test-verify/SKILL.md) |
+| Code review | [review-code](../review-code/SKILL.md) |
+| Complete UI/UX audit, repair, and re-verification | [loop-ui-ux-audit-and-fix](../loop-ui-ux-audit-and-fix/SKILL.md) |
+| Complete code audit, repair, and re-verification | [loop-code-audit-and-fix](../loop-code-audit-and-fix/SKILL.md) |
+| Visual UI audit | [ui-audit](../ui-audit/SKILL.md) |
+| User-flow and behavioral UX work | [ux-flow](../ux-flow/SKILL.md) |
 | Verified deploy-ready handover | This coordinator, using the [delivery handover method](references/delivery-handover.md) |
 | Capture or refine Anik's own methods | [personalize.md](references/personalize.md) |
 
@@ -41,9 +49,9 @@ A skill defines the method; a sub-agent performs an assigned task using it. Thes
 
 ## Apply engineering defaults
 
-Engineering agents and coordinator work apply [Labour](../labour/SKILL.md), its [strict coding rules](../labour/references/coding-rules.md), and [Karpathy-inspired principles](../labour/references/engineering-principles.md). Default Labour to full mode unless Anik chooses otherwise. Simplicity preserves requested behavior, security, money invariants, accessibility, and useful checks.
+Engineering agents apply their task-specific skills with [coding rules](../../rules/coding.md), [simplicity](../../rules/simplicity.md), and [Karpathy-inspired principles](../../rules/engineering-principles.md). Task skills keep architecture, implementation, debugging, verification, review, UI, and UX responsibilities separate. Simplicity preserves requested behavior, security, money invariants, accessibility, and useful checks.
 
-For a new business portfolio without a chosen stack, default to Laravel + Blade + Livewire using [official Laravel guidance](../labour/references/laravel-livewire.md). Consider [Next.js](../labour/references/nextjs.md) when demonstrated scalability and frontend requirements justify it; explain the relevant trade-off. Preserve existing stacks and explicit choices.
+For a new business portfolio without a chosen stack, default to Laravel + Blade + Livewire using the [Laravel capability](../../capabilities/frameworks/laravel-livewire.md). Consider the [Next.js capability](../../capabilities/frameworks/nextjs.md) when demonstrated scalability and frontend requirements justify it; explain the relevant trade-off. Preserve existing stacks and explicit choices.
 
 Give recommendations grounded in evidence. Distinguish confirmed preferences, situational requirements, and proposed methods. Read the actual project's instructions and code; use available specialist capabilities only when useful and after reading their instructions. Do not claim unavailable tools, agent capacity, or external verification.
 

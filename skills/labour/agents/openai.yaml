@@ -1,4 +1,0 @@
-interface:
-  display_name: "Labour"
-  short_description: "Architecture, coding, debugging, and review"
-  default_prompt: "Use $labour to make this engineering decision, implement or debug the scoped work, review the result, and return verification evidence."

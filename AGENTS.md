@@ -6,8 +6,10 @@ This workspace contains reusable agent instructions for Anik's software and prod
 
 - `LIBRARY.md`: purpose map, scope, and expansion criteria.
 - `skills/loop-zero-to-production/`: goal-driven lifecycle loop, interaction, sub-agent coordination, and shared context contract. Invoke `$loop-zero-to-production`; it replaces the former `zero-to-production` coordinator name.
-- `skills/{plan-do,init-this-pc,init-this-project}/`: connected purpose-specific micro-skills. Product framing and deploy-ready handover remain methods inside the coordinator.
-- `skills/labour/`: combined architecture, coding, debugging, review, and Ponytail/Karpathy-inspired engineering skill, with the upstream MIT license.
+- `skills/`: task-oriented skills for lifecycle, initialization, planning, architecture, implementation, debugging, verification, review, UI, UX, and autonomous audit-and-fix work.
+- `rules/`: reusable global constraints; project instructions override them where they conflict.
+- `capabilities/`: stack-specific guidance selected from project context.
+- `commands/`, `agents/`, `tools/`, and `context/`: command mappings, worker roles, runtime capabilities, and context precedence.
 - `lazyagent/`: unchanged upstream Ponytail Git clone, retained for reference and provenance; it is not the installed runtime skill.
 - Installed discovery locations: matching sibling folders under `~/.codex/skills/`.
 
@@ -20,11 +22,11 @@ The workspace copies are the editable source. Install the whole connected bundle
 - Preserve the confirmed goal-driven loop: define the requested outcome and acceptance criteria, advance through bounded execution, integrate and verify results, and reassess the next unmet outcome until the goal is achieved or genuinely blocked by a necessary answer. Intermediate plans, scaffolds, or worker completions do not finish a full delivery request.
 - Use the requested sub-agent-driven execution model across connected workflows. Micro-skills are instructions, not agents: assign actual workers concrete bounded tasks with relevant skills, acceptance criteria, context, and file ownership. Parallelize independent work alongside useful coordinator work; serialize dependencies and overlapping writes. The coordinator owns integration and final verification. Follow `skills/loop-zero-to-production/references/delegation.md`; do not spawn workers merely to satisfy a count or claim measured speed gains.
 - Ask material questions as soon as discovered, including questions surfaced by workers. Coordinate user interaction through the supervising assistant, explain the consequence, reuse answers and authorization, and continue independent work while waiting. Do not repeat discovery at every delegation.
-- Preserve micro-skill boundaries: the coordinator owns the overall finish line; engineering belongs to `labour`. Carry decisions, artifacts, open questions, and evidence through the shared handoff; do not restart discovery at every transition.
+- Preserve skill boundaries: the coordinator owns the overall finish line; task-oriented skills own their named work. Carry decisions, artifacts, open questions, and evidence through the shared handoff; do not restart discovery at every transition.
 - Keep direct micro-skill requests scoped to their stated outcome, including any delegated work. The loop runs in the active task and does not create scheduled background jobs.
 - Full delivery ends with verified deploy-ready handover. Actual deployment, infrastructure provisioning, production migrations, and rollout operations are excluded from this bundle.
 - Keep PC-level Codex/Claude scratch setup in `init-this-pc`; it must inspect existing tools and preserve unrelated global configuration. Keep application scaffolding in `init-this-project`; it must not mutate machine-wide tooling or shell configuration as a side effect.
-- Apply Labour to engineering and its relevant strict development rules. Its Ponytail-derived simplicity and Karpathy-inspired guidance preserve requirements, security, money invariants, accessibility, and meaningful checks.
+- Apply task-specific engineering skills with the relevant global rules. Ponytail-derived simplicity and Karpathy-inspired guidance preserve requirements, security, money invariants, accessibility, and meaningful checks.
 - Default a new business portfolio to Laravel + Blade + Livewire. Consider Next.js when actual scalability and frontend requirements justify it; preserve existing stacks and explicit choices.
 - Use official version-matched framework guidance and available package-specific skills. Attribute the community Karpathy-inspired principles accurately.
 - Capture a preference's source, context, and exceptions. A single example does not establish a universal rule.

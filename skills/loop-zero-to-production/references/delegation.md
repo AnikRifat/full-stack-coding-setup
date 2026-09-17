@@ -20,7 +20,7 @@ Provide enough direct evidence to execute without rediscovering the project:
 - Dependencies, explicit exclusions, assigned write ownership by file or directory, and the coordinator's integration plan. Shared files and contracts require one owner.
 - Required deliverables: artifact paths or changed behavior, meaningful verification commands and results, supported findings, limits, remaining dependency, and recommended next action.
 
-The agent reads its selected micro-skill and applicable project instructions before acting. Engineering assignments also read [Labour](../../labour/SKILL.md) and the applicable [coding rules](../../labour/references/coding-rules.md), engineering principles, and version-matched official stack guidance. Do not substitute a short assignment summary for necessary source evidence. Keep requested scope and existing stack intact.
+The agent reads its selected skill, applicable [global rules](../../../rules/README.md), project instructions, and context-matched capabilities before acting. Do not substitute a short assignment summary for necessary source evidence. Keep requested scope and existing stack intact.
 
 Agents do not spawn further agents by default. Return a proposed split to the coordinator when useful; only an explicit nested assignment with available capacity and distinct ownership justifies further delegation.
 
@@ -32,7 +32,12 @@ These are useful assignment shapes, not a mandatory team or fixed stage sequence
 | --- | --- |
 | Coordinator product method | Analyze a supplied client problem or reference and recommend journey, scope, and open business questions under the coordinator's ownership |
 | `plan-do` | Turn established outcomes into goal-driven criteria, dependent increments, and a recommended work order |
-| `labour` | Assess architecture; implement, refactor, debug, or review a bounded engineering outcome with exclusive ownership |
+| `arch-design` | Assess a material architecture decision and return a reviewable design |
+| `code-implement` | Implement one scoped outcome with exclusive write ownership |
+| `debug-investigate` | Reproduce, diagnose, and repair one supported failure |
+| `test-verify` | Verify agreed behavior and report coverage limits |
+| `review-code` | Return evidence-backed findings without overlapping implementation writes |
+| `ui-audit` / `ux-flow` | Assess visual interface or behavioral user-flow concerns with distinct outcomes |
 | `init-this-pc` | Own a bounded global Codex/Claude scratch-environment task; serialize shared configuration writes and preserve unrelated settings |
 | `init-this-project` | Own one approved native scaffold and project setup; serialize its writes before application implementation |
 | Coordinator handover method | Assemble readiness and local operating notes from verified artifacts; report missing evidence under the coordinator's ownership |

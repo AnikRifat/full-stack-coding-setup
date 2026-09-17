@@ -11,4 +11,4 @@ Inspect the target folder first. Preserve existing instructions, Git state, sour
 
 Ask the next material question immediately when stack, deployment constraints, core user journey, reference fidelity, credentials, or destructive overwrite risk is unclear. For a clear direct setup request, coordinate the needed work, verify local setup, and leave a concise project record.
 
-Under [loop-zero-to-production](../loop-zero-to-production/SKILL.md), initialization moves into [Labour](../labour/SKILL.md) for the approved implementation. A setup-only request ends after a reviewable, verified project setup; a scaffold is not an MVP.
+Under [loop-zero-to-production](../loop-zero-to-production/SKILL.md), initialization moves into [code-implement](../code-implement/SKILL.md) for approved implementation. A setup-only request ends after a reviewable, verified project setup; a scaffold is not an MVP.

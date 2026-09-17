@@ -1,0 +1,13 @@
+project: string
+domain:
+  primary: ecommerce|saas|marketplace|logistics|fintech|inventory|accounts-finance|admin-ops|generic
+  secondary: [domain]
+  confidence: { domain: 0.0 }
+product_type: dashboard|admin-panel|storefront|mobile-app|b2b-app
+users: [role]
+platform: [desktop|mobile|responsive-web]
+business_model: subscription|transaction|marketplace-take-rate|enterprise|other
+risk_level: low|medium|high
+primary_jobs: [string]
+stack: string
+# Confidence values are 0.0–1.0 evidence scores. Below 0.6, ask one blocking framing question; otherwise state the inferred context and proceed.

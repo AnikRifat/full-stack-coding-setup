@@ -22,7 +22,7 @@ Distinguish a confirmed preference, a project-specific requirement, a tentative 
 
 A useful record contains the situation, decision, reason, source and date, applicable contexts, exceptions, and observed result if known. Do not invent motives or outcomes. Keep secrets and unnecessary client details out of the library.
 
-Update [profile.md](profile.md) for shared personal defaults. Update the relevant micro-skill for a workflow decision; code-specific rules belong to [labour](../../labour/SKILL.md). Project conventions belong in project context unless the user identifies a reusable pattern. Revise existing wording instead of accumulating overlapping rules.
+Update [profile.md](profile.md) for shared personal defaults. Update the relevant task skill for a workflow decision; reusable code constraints belong in [global rules](../../../rules/README.md). Project conventions belong in project context unless the user identifies a reusable pattern. Revise existing wording instead of accumulating overlapping rules.
 
 ## Decide when to create another skill
 
