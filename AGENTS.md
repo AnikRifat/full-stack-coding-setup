@@ -7,10 +7,9 @@ This workspace contains reusable agent instructions for Anik's software and prod
 - `LIBRARY.md`: purpose map, scope, and expansion criteria.
 - `skills/loop-delivery/`: goal-driven lifecycle loop, interaction, sub-agent coordination, and shared context contract. Invoke `$loop-delivery`; it replaces the former `zero-to-production` coordinator name.
 - `skills/`: task-oriented skills for lifecycle, initialization, planning, architecture, implementation, debugging, verification, review, UI, UX, and autonomous audit-and-fix work.
-- `rules/`: reusable global constraints; project instructions override them where they conflict.
+- `rules/`: reusable global constraints. A project's own instructions and its observed code win over them where they conflict, so skills inspect project context before applying a global default.
 - `capabilities/`: stack-specific guidance selected from project context.
-- `commands/`, `agents/`, `tools/`, and `context/`: command mappings, worker roles, runtime capabilities, and context precedence.
-- `lazyagent/`: unchanged upstream Ponytail Git clone, retained for reference and provenance; it is not the installed runtime skill.
+- `commands/`, `agents/`, and `tools/`: command mappings, worker roles, and runtime capabilities.
 - Installed discovery locations: copied folders under `~/.codex/skills/` (Codex) and symlinks under `~/.claude/skills/` (Claude Code). Run `tools/install.sh` after any edit; a Codex-only install leaves the bundle invisible to Claude Code.
 
 The workspace copies are the editable source. Install the whole connected bundle and keep owned installed copies consistent after authorized edits. Keep one coordinator under its new name, without a duplicate old-name installation. Sibling links resolve from the skill folder, not the application working directory. Do not change unrelated installed skills, the installed Ponytail plugin, or global instructions as a side effect.

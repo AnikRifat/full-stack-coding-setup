@@ -1,6 +1,6 @@
 # Ponytail-derived simplicity
 
-This library incorporates Anik's adaptation of [Ponytail](https://github.com/DietrichGebert/ponytail), by Dietrich Gebert. The upstream source checkout is retained as `lazyagent/` in this library workspace. Preserve the upstream [MIT notice](../licenses/ponytail-MIT.txt).
+This library incorporates Anik's adaptation of [Ponytail](https://github.com/DietrichGebert/ponytail), by Dietrich Gebert. Preserve the upstream [MIT notice](../licenses/ponytail-MIT.txt); the source is the upstream repository, not a checkout vendored here.
 
 Default to **full** simplicity for engineering work. Anik can choose `lite`, `full`, or `ultra`, or explicitly disable this approach. It governs what is built, not the format of explanations or a fixed number of tests.
 
