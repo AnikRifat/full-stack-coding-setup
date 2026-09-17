@@ -10,7 +10,7 @@ This workspace contains reusable agent instructions for Anik's software and prod
 - `rules/`: reusable global constraints, including `output.md`, which bounds how much a skill reads, carries, and reports. A project's own instructions and its observed code win over them where they conflict, so skills inspect project context before applying a global default.
 - `capabilities/`: stack-specific guidance selected from project context.
 - `commands/`, `agents/`, and `tools/`: command mappings, worker roles, and runtime capabilities.
-- Installed discovery locations: copied folders under `~/.codex/skills/` (Codex) and symlinks under `~/.claude/skills/` (Claude Code). Run `tools/install.sh` after any edit; a Codex-only install leaves the bundle invisible to Claude Code.
+- Installed discovery locations: symlinks under `~/.claude/skills/` (Claude Code), copied folders under `~/.codex/skills/` (Codex), and copied folders under `~/.gemini/config/skills/` (Antigravity — the one path its IDE, CLI, and agent all read). Run `tools/install.sh` after any edit; installing for one runtime leaves the bundle invisible to the other two. The Antigravity target is skipped when `~/.gemini` is absent.
 
 The workspace copies are the editable source. Install the whole connected bundle and keep owned installed copies consistent after authorized edits. Keep one coordinator under its new name, without a duplicate old-name installation. Sibling links resolve from the skill folder, not the application working directory. Do not change unrelated installed skills, the installed Ponytail plugin, or global instructions as a side effect.
 

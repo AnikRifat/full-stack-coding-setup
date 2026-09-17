@@ -54,4 +54,4 @@ Use `/support-resolve` when the input is a customer's report rather than an inte
 
 Use `/code-implement` for a clear scoped change, `/bug-investigate` for a supported failure, `/behavior-verify` for verification, and `/change-review` for assessment. Use `/arch-design` only when the boundary or structure is material.
 
-The source library is this workspace. Codex reads copies under `~/.codex/skills/` and Claude Code reads symlinks under `~/.claude/skills/`; `tools/install.sh` refreshes both. Synchronize the owned bundle after edits because task skills link to shared rules and capabilities. No application, deployment, or production operation is implied by this library.
+The source library is this workspace. Claude Code reads symlinks under `~/.claude/skills/`; Codex reads copies under `~/.codex/skills/`; Antigravity reads copies under `~/.gemini/config/skills/`. `tools/install.sh` refreshes all three, skipping any runtime not installed. Synchronize the owned bundle after edits because task skills link to shared rules and capabilities. No application, deployment, or production operation is implied by this library.

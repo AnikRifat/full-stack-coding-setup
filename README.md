@@ -64,7 +64,15 @@ Actual deployment is outside all of them. They finish at a verified, deploy-read
 ./tools/install.sh
 ```
 
-Copies each skill to `~/.codex/skills/` for Codex, symlinks each into `~/.claude/skills/` for Claude Code, and removes installed folders this library no longer defines. Re-run after any rename or edit — a Codex-only install leaves the bundle invisible to Claude Code.
+Installs to every runtime present on this machine and removes installed folders this library no longer defines. Re-run after any rename or edit — installing for one runtime leaves the bundle invisible to the others.
+
+| Runtime | Location | How |
+| --- | --- | --- |
+| Claude Code | `~/.claude/skills/` | symlink — edits take effect immediately |
+| Codex | `~/.codex/skills/` | copy |
+| Antigravity | `~/.gemini/config/skills/` | copy — the one path its IDE, CLI, and agent all read |
+
+Antigravity is skipped when `~/.gemini` does not exist.
 
 ## Layout
 

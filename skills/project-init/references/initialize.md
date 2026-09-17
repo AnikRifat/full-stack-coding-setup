@@ -26,7 +26,7 @@ Check the repository's own history for what is under active change and what is u
 
 Verify before claiming understanding. Run the project's existing checks — its test command, linter, or type check — and report what actually passed, what failed, and what could not be run and why. An adoption summary with no executed check is a reading, not a verification.
 
-Write the findings to the project's own `AGENTS.md` or `CLAUDE.md`, merging with what is there rather than replacing it. Record the stack and versions, run and test commands, architecture, conventions, data layer, integrations, and the areas deliberately not explored. Label an unknown as unknown.
+Write the findings to one instruction file and make the others point at it. Several runtimes read different names — `CLAUDE.md`, `AGENTS.md`, `GEMINI.md` — and maintaining parallel copies guarantees they drift; a project here already carries three files where two are byte-identical and the third is 57 lines behind. Keep `AGENTS.md` as the content, and make each other name a symlink to it, or a one-line file that says which file is authoritative. Merge with what is there rather than replacing it. Record the stack and versions, run and test commands, architecture, conventions, data layer, integrations, and the areas deliberately not explored. Label an unknown as unknown.
 
 Then stop. Adoption ends at a verified understanding and a written record. Any code change is a separate request routed to [code-implement](../../code-implement/SKILL.md), [bug-investigate](../../bug-investigate/SKILL.md), or [arch-design](../../arch-design/SKILL.md).
 

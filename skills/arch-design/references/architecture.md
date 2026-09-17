@@ -16,6 +16,20 @@ Consider Next.js when concrete scalability and frontend needs support it, using 
 
 Keep validation and authorization at real trust boundaries. Define schema and consistency requirements from the business rules. Money-related behavior uses Anik's more defensive default; brevity does not remove authenticity checks, duplicate handling, or other required guarantees.
 
+## Where the Laravel application layer goes
+
+Two layouts are in use across Anik's projects and both are defensible, so pick one per project and never mix them: a flat `app/Services/` layer, and `app/Domains/<Domain>/` holding its own models, services, and actions.
+
+Flat services are correct while the services are few and the nouns are shared. They degrade when the directory grows past roughly the point where a reader can no longer tell which feature a file belongs to from its name — one project here reached 62 of them, alongside both a `Helper` and a `Helpers` directory, which is what that degradation looks like.
+
+Domain folders are correct when the business genuinely has separate areas with their own vocabulary and rules, and they pay for themselves by making the boundary visible. They cost a cross-domain call discipline that must actually be enforced; 19 domains with no rule about who may call whom is the flat layer again with longer paths.
+
+In an existing project, match what is there. Propose the migration only when a specific recurring problem justifies it, and then as an incremental move of one area, never a repository-wide restructure.
+
+## Test coverage is an architectural fact, not a later task
+
+Read the ratio of tests to migrations before proposing structure. Across these projects it ranges from 156 test files to 4 in a monorepo with 159 migrations. A structure that assumes tests will catch a regression is wrong in the second case, and the recommendation changes accordingly: fewer moving parts, stricter database constraints, and the invariant pushed into the schema where the application has no test to defend it.
+
 ## Make decisions reviewable
 
 Explain the chosen structure, the requirement it serves, and the trade-off that could change it. For substantial decisions, keep a short record in existing project architecture notes or the workflow checkpoint. Do not create a formal decision document for every helper or component.
