@@ -17,6 +17,7 @@ flowchart TD
 | Skill | Responsibility |
 | --- | --- |
 | [loop-delivery](skills/loop-delivery/SKILL.md) | Iterative idea-to-deploy-ready lifecycle |
+| [loop-product-reforge](skills/loop-product-reforge/SKILL.md) | Diagnose (B.I.A.S.) and fix (C.L.E.A.R.) product UX across any scope |
 | [loop-interface-audit](skills/loop-interface-audit/SKILL.md) | Autonomous UI/UX audit, fix, and verification loop |
 | [loop-code-audit](skills/loop-code-audit/SKILL.md) | Autonomous code audit, repair, and verification loop |
 | [machine-init](skills/machine-init/SKILL.md) | Global Codex/Claude scratch environment |
@@ -48,6 +49,7 @@ flowchart TD
 
 For a new business portfolio without an established stack, Laravel with Blade and Livewire is the starting recommendation. Existing stack and project instructions win. Next.js is considered when the actual workload and frontend needs justify it.
 
+Use `/loop-product-reforge` when a product experience needs B.I.A.S. diagnosis and C.L.E.A.R. redesign across any structural scale.
 Use `/loop-interface-audit` when an interface needs a complete autonomous audit-and-fix cycle with bounded sub-agents. Use `/ui-audit` for a visual-only audit and `/flow-design` for a journey-only analysis. They are intentionally separate.
 
 Use `/loop-code-audit` for a complete engineering audit-and-fix cycle. Use the individual architecture, implementation, debugging, verification, and review skills for a narrow outcome.

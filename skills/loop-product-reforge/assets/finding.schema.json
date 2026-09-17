@@ -1,0 +1,12 @@
+{
+  "id": "F1",
+  "title": "Specific finding title",
+  "code": "F-HIER",
+  "severity": "High",
+  "evidence": { "type": "route|file|copy|screenshot|data|rule", "value": "/admin/orders" },
+  "diagnosis": "principle violated → user cost → business cost",
+  "fix": "specific implementable change",
+  "effort": "S|M|L",
+  "verify": "regression check",
+  "confidence": 0.9
+}

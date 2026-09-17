@@ -39,6 +39,7 @@ Read [profile.md](references/profile.md) for confirmed defaults and unknowns. Pr
 | Bug investigation and repair | [bug-investigate](../bug-investigate/SKILL.md) |
 | Behavior verification | [behavior-verify](../behavior-verify/SKILL.md) |
 | Code review | [change-review](../change-review/SKILL.md) |
+| Complete product UX diagnosis (B.I.A.S.), redesign (C.L.E.A.R.) and re-verification | [loop-product-reforge](../loop-product-reforge/SKILL.md) |
 | Complete UI/UX audit, repair, and re-verification | [loop-interface-audit](../loop-interface-audit/SKILL.md) |
 | Complete code audit, repair, and re-verification | [loop-code-audit](../loop-code-audit/SKILL.md) |
 | Visual UI audit | [ui-audit](../ui-audit/SKILL.md) |
