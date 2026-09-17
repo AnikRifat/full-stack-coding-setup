@@ -42,4 +42,4 @@ Continue useful work within scope, ask about material ambiguity, and explain sig
 
 ## Provenance
 
-Cloned from `https://github.com/DietrichGebert/ponytail.git` on 2026-09-17 at commit `e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156`. This adaptation integrates the approach into Labour, aligns verification with project tooling, and removes unrelated output constraints. It does not modify the installed Ponytail plugin or rename its platform integrations.
+Cloned from `https://github.com/DietrichGebert/ponytail.git` on 2026-09-17 at commit `e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156`. This adaptation integrates the approach into this library, aligns verification with project tooling, and removes unrelated output constraints. It does not modify the installed Ponytail plugin or rename its platform integrations.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze UX Flow"
+  short_description: "Analyze user journeys and interaction flow"
+  default_prompt: "Use $flow-design to analyze this user journey, interaction flow, and usability."

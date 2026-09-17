@@ -1,4 +1,0 @@
-interface:
-  display_name: "Loop Code Audit and Fix"
-  short_description: "Autonomously audit and repair code issues"
-  default_prompt: "Use $loop-code-audit-and-fix to audit this codebase, repair supported issues with bounded sub-agents, and verify the result."

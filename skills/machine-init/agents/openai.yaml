@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize This PC"
+  short_description: "Prepare a Codex or Claude scratch environment"
+  default_prompt: "Use $machine-init to inspect and prepare this computer's Codex or Claude scratch environment safely."

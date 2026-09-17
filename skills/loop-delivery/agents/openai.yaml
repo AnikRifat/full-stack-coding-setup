@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loop Zero to Production"
+  short_description: "Run an interactive goal loop with bounded sub-agents"
+  default_prompt: "Use $loop-delivery to run this goal through connected micro-skills and bounded sub-agents, ask material questions immediately, verify each result, and finish with deploy-ready handover."

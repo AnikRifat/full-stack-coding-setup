@@ -1,4 +1,0 @@
-interface:
-  display_name: "Loop UI UX Audit and Fix"
-  short_description: "Autonomously audit and fix UI UX issues"
-  default_prompt: "Use $loop-ui-ux-audit-and-fix to audit this product interface, fix supported issues with bounded sub-agents, and verify the result."

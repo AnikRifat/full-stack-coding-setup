@@ -4,7 +4,7 @@ Status: confirmed stack defaults with proposed implementation method. Detailed p
 
 Read the project's instructions, dependency manifests, and the relevant existing implementation before choosing an approach. Use the local conventions for naming, boundaries, data access, validation, error handling, and tests until Anik establishes a different preference.
 
-Apply [simplicity](../../../rules/simplicity.md), [coding rules](../../../rules/coding.md), and [engineering principles](../../../rules/engineering-principles.md) to every coding or refactoring increment. Use [arch-design](../../arch-design/SKILL.md) for material structural decisions and [init-this-project](../../init-this-project/SKILL.md) when starting in a blank folder. An implementation request requires working behavior, not only a scaffold or plan.
+Apply [simplicity](../../../rules/simplicity.md), [coding rules](../../../rules/coding.md), and [engineering principles](../../../rules/engineering-principles.md) to every coding or refactoring increment. Use [arch-design](../../arch-design/SKILL.md) for material structural decisions and [project-init](../../project-init/SKILL.md) when starting in a blank folder. An implementation request requires working behavior, not only a scaffold or plan.
 
 ## Stack decisions
 
@@ -18,10 +18,10 @@ Apply [simplicity](../../../rules/simplicity.md), [coding rules](../../../rules/
 
 Prefer changes that fit the requested behavior and the existing architecture. Present significant product or architecture decisions with a recommendation and the relevant trade-off. Routine reversible implementation choices can be resolved directly.
 
-For money-related behavior, explicitly choose the more defensive option and verify the relevant invariants from the actual provider and project. Consult [domains.md](../../loop-zero-to-production/references/domains.md) when needed; do not invent webhook or financial guarantees.
+For money-related behavior, explicitly choose the more defensive option and verify the relevant invariants from the actual provider and project. Consult [domains.md](../../loop-delivery/references/domains.md) when needed; do not invent webhook or financial guarantees.
 
 Verify the behavior at a level appropriate to the change. Use existing required checks, and add focused regression coverage when it protects a meaningful failure mode. Do not add tests that only repeat the wording or structure of the implementation.
 
 Report what changed, why, relevant verification, and any material limitation. Do not claim an unexecuted check passed.
 
-For a code review, use [review-code](../../review-code/SKILL.md). Use the coordinator's [deploy-ready handover method](../../loop-zero-to-production/references/delivery-handover.md) for requested final preparation. Actual deployment remains outside this skill.
+For a code review, use [change-review](../../change-review/SKILL.md). Use the coordinator's [deploy-ready handover method](../../loop-delivery/references/delivery-handover.md) for requested final preparation. Actual deployment remains outside this skill.

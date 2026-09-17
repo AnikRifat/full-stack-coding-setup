@@ -9,4 +9,4 @@ Inspect the requested behavior, project context, affected code, and available co
 
 Implement the smallest clear change that preserves required behavior, authorization, data integrity, accessibility, and existing conventions. Keep scope contained; do not introduce dependencies, migrations, abstractions, or features without a demonstrated need.
 
-Run meaningful checks for changed behavior. Route a material design decision to [arch-design](../arch-design/SKILL.md), a supported failure to [debug-investigate](../debug-investigate/SKILL.md), and a requested independent assessment to [review-code](../review-code/SKILL.md).
+Run meaningful checks for changed behavior. Route a material design decision to [arch-design](../arch-design/SKILL.md), a supported failure to [bug-investigate](../bug-investigate/SKILL.md), and a requested independent assessment to [change-review](../change-review/SKILL.md).

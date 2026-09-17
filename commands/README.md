@@ -4,14 +4,15 @@ Commands are user-facing entry points that map to skills. They do not duplicate 
 
 | Command | Skill |
 | --- | --- |
-| `$loop-zero-to-production` | Full iterative lifecycle |
-| `$loop-ui-ux-audit-and-fix` | Autonomous UI/UX audit, fix, and verification loop |
-| `$loop-code-audit-and-fix` | Autonomous code audit, repair, and verification loop |
-| `$init-this-pc` / `$init-this-project` | PC or project initialization |
-| `$plan-do` | Goal-driven plan |
+| `$loop-delivery` | Full iterative lifecycle |
+| `$loop-interface-audit` | Autonomous UI/UX audit, fix, and verification loop |
+| `$loop-code-audit` | Autonomous code audit, repair, and verification loop |
+| `$machine-init` / `$project-init` | PC or project initialization |
+| `$delivery-plan` | Goal-driven plan |
 | `$arch-design` | Architecture decision |
 | `$code-implement` | Scoped implementation |
-| `$debug-investigate` | Evidence-based debugging |
-| `$test-verify` | Behavior verification |
-| `$review-code` | Code review |
-| `$ui-audit` / `$ux-flow` | Visual UI or behavioral UX work |
+| `$bug-investigate` | Evidence-based debugging |
+| `$behavior-verify` | Behavior verification |
+| `$change-review` | Code review |
+| `$ui-audit` / `$flow-design` | Visual UI or behavioral UX work |
+| `$support-resolve` | Customer request, split client and internal answer |

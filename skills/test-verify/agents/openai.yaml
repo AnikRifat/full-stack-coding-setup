@@ -1,4 +1,0 @@
-interface:
-  display_name: "Verify Behavior"
-  short_description: "Verify software behavior with useful checks"
-  default_prompt: "Use $test-verify to verify this requested behavior and report the evidence and limits."

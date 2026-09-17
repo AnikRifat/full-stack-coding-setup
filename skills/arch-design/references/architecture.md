@@ -2,7 +2,7 @@
 
 Source: Anik asked this skill to own architecture as well as coding across product and software lifecycles. Specific design choices below are starting recommendations, subject to the project's evidence and requirements.
 
-Read [simplicity](../../../rules/simplicity.md) before architecture or dependency decisions. Use the coordinator's [product method](../../loop-zero-to-production/references/product-method.md), [domains.md](../../loop-zero-to-production/references/domains.md), and [coding rules](../../../rules/coding.md) to connect software structure to the actual journey, actors, business rules, and engineering requirements.
+Read [simplicity](../../../rules/simplicity.md) before architecture or dependency decisions. Use the coordinator's [product method](../../loop-delivery/references/product-method.md), [domains.md](../../loop-delivery/references/domains.md), and [coding rules](../../../rules/coding.md) to connect software structure to the actual journey, actors, business rules, and engineering requirements.
 
 ## Begin with requirements that change the structure
 
@@ -22,4 +22,4 @@ Explain the chosen structure, the requirement it serves, and the trade-off that 
 
 Use official framework patterns and package-matched guidelines where available. In an existing codebase, understand its boundaries and callers before changing them; avoid a broad rewrite to solve a narrow failure.
 
-Feed the selected architecture into [plan-do](../../plan-do/SKILL.md) and [code-implement](../../code-implement/SKILL.md), then validate it through implementation evidence. Revise it when actual results expose a limitation, rather than prebuilding every possible extension.
+Feed the selected architecture into [delivery-plan](../../delivery-plan/SKILL.md) and [code-implement](../../code-implement/SKILL.md), then validate it through implementation evidence. Revise it when actual results expose a limitation, rather than prebuilding every possible extension.

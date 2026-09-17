@@ -1,6 +1,6 @@
 # Strict coding and development rules
 
-Anik requested strict coding and development rules on 2026-09-17. These are the enforceable starting rules for engineering under `loop-zero-to-production`. Apply the rules relevant to the work; they are not a requirement to add every capability mentioned below. Explicit project or user requirements can change a convention, with the reason recorded.
+Anik requested strict coding and development rules on 2026-09-17. These are the enforceable starting rules for engineering under `loop-delivery`. Apply the rules relevant to the work; they are not a requirement to add every capability mentioned below. Explicit project or user requirements can change a convention, with the reason recorded.
 
 ## Requirements and scope
 
@@ -14,7 +14,7 @@ Anik requested strict coding and development rules on 2026-09-17. These are the 
 5. **Validate and authorize on the server.** Validate untrusted inputs and enforce access to the specific action and data at the actual trust boundary. UI checks, hidden controls, client-provided IDs, and a user's logged-in status do not replace authorization. Escape output and parameterize database operations using framework facilities.
 6. **Keep secrets and sensitive data private.** Use appropriate configuration and example files. Never put credentials in source, public client bundles, logs, or checkpoint notes. Client-exposed environment variables contain only intentionally public values. Use the established secret mechanism rather than inventing one.
 7. **Protect data invariants.** Use schema constraints and transactions where required by the actual operation. Bound result sets and avoid demonstrated unnecessary query multiplication. Do not run destructive data commands or target production by assumption. Document relevant migration and compatibility requirements.
-8. **Use the defensive money path.** Use exact money representation appropriate to the currency and provider; do not calculate balances with binary floating point. Verify event authenticity and duplicate behavior where integrations require them. Enforce relevant consistency and reconciliation rules. Explain the stricter choice and preserve it under Labour.
+8. **Use the defensive money path.** Use exact money representation appropriate to the currency and provider; do not calculate balances with binary floating point. Verify event authenticity and duplicate behavior where integrations require them. Enforce relevant consistency and reconciliation rules. Explain the stricter choice and preserve it under the simplicity rules.
 9. **Handle failures deliberately.** Do not swallow failures, return fabricated success, or log private payloads to conceal a problem. Define behavior for realistic integration, validation, and data errors. Make externally consequential retries safe according to the actual operation; do not add retry loops without evidence.
 10. **Keep user flows usable.** Preserve needed keyboard interaction, labels, semantic controls, and relevant loading, empty, validation, and failure states. Follow the actual client brand and reference agreement. Do not substitute placeholder content or a visual resemblance score for agreed behavior.
 
@@ -28,4 +28,4 @@ Anik requested strict coding and development rules on 2026-09-17. These are the 
 
 During initialization, map applicable rules to native project checks and document their actual commands in project instructions. Use existing tools before adding another. Laravel projects should use their available PHP formatting and testing tools; Next.js projects should expose the applicable TypeScript, lint, build, and behavior checks. Do not invent an absent command or silently treat it as passed.
 
-Before committing to a material design, compare it with these rules. Before finishing an increment, run the checks affected by the change. Repair supported failures and continue through the [operating loop](../skills/loop-zero-to-production/references/operating-loop.md); broader checks are warranted by changed behavior, failures, or unresolved concerns rather than repeated ceremony.
+Before committing to a material design, compare it with these rules. Before finishing an increment, run the checks affected by the change. Repair supported failures and continue through the [operating loop](../skills/loop-delivery/references/operating-loop.md); broader checks are warranted by changed behavior, failures, or unresolved concerns rather than repeated ceremony.

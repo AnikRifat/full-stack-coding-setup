@@ -1,0 +1,4 @@
+interface:
+  display_name: "Customer Support"
+  short_description: "Resolve a support request with a split client and internal answer"
+  default_prompt: "Use $support-resolve to classify this customer request, diagnose it from real evidence, and answer in two parts: a client reply and an internal technical record."

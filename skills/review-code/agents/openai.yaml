@@ -1,4 +1,0 @@
-interface:
-  display_name: "Review Code"
-  short_description: "Review a change for material risks"
-  default_prompt: "Use $review-code to review this change against its requirements and project conventions."

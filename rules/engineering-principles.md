@@ -2,7 +2,7 @@
 
 Requested by Anik on 2026-09-17. Source: the community [Karpathy-inspired guidelines](https://github.com/multica-ai/andrej-karpathy-skills), previously hosted under `forrestchang/andrej-karpathy-skills`. This is an adapted interpretation of the repository's principles, not an official skill authored or endorsed by Andrej Karpathy.
 
-Apply these alongside [Labour simplicity](simplicity.md):
+Apply these alongside [simplicity](simplicity.md):
 
 - **Reason before editing.** Expose assumptions and uncertainty that would change the implementation. Ask about consequential ambiguity; use documented defaults for routine choices.
 - **Keep the solution direct.** Satisfy the actual requirements without speculative features, unused configuration, or a layer that has no demonstrated purpose.
