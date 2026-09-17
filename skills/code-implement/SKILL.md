@@ -5,7 +5,7 @@ description: Implement an agreed software change using the repository's stack, c
 
 # Implement code
 
-Inspect the requested behavior, project context, affected code, and available commands. Read [implementation guidance](references/build.md), [coding rules](../../rules/coding.md), [output rules](../../rules/output.md), and only the relevant framework capability.
+Inspect the requested behavior, project context, affected code, and available commands. Read [implementation guidance](references/build.md), [coding rules](../../rules/coding.md), [output rules](../../rules/output.md), [databases](../../capabilities/databases.md) when the change touches schema, migrations, or queries, and only the relevant framework capability.
 
 Implement the smallest clear change that preserves required behavior, authorization, data integrity, accessibility, and existing conventions. Keep scope contained; do not introduce dependencies, migrations, abstractions, or features without a demonstrated need.
 

@@ -71,7 +71,7 @@ Copies each skill to `~/.codex/skills/` for Codex, symlinks each into `~/.claude
 | --- | --- |
 | `skills/` | One folder per skill: `SKILL.md`, its references, and its agent metadata |
 | `rules/` | Global constraints every engineering skill applies |
-| `capabilities/` | Stack-specific knowledge, selected from the project's real stack |
+| `capabilities/` | Stack-specific knowledge, selected from the project's real stack: Laravel + Livewire, Next.js, and databases (PostgreSQL / MySQL / MongoDB) |
 | `commands/`, `agents/`, `tools/` | Trigger map, worker roles, runtime capability notes |
 
 [LIBRARY.md](LIBRARY.md) is the internal map of how those layers relate; [AGENTS.md](AGENTS.md) holds the authoring and validation rules for changing this library.
