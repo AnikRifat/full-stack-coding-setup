@@ -5,7 +5,7 @@ description: Investigate and repair a reproducible software failure using eviden
 
 # Investigate a bug
 
-Establish the observed behavior, expected behavior, reproduction, affected environment, and previous attempts. Read [debugging guidance](references/debug.md), [coding rules](../../rules/coding.md), and context-matched capabilities.
+Establish the observed behavior, expected behavior, reproduction, affected environment, and previous attempts. Read [debugging guidance](references/debug.md), [coding rules](../../rules/coding.md), [output rules](../../rules/output.md), and context-matched capabilities.
 
 Inspect the narrowest relevant execution path, form and test a root-cause hypothesis, then make a focused repair. Preserve security, authorization, and money or data invariants. Ask when missing evidence or a business rule changes what counts as correct.
 

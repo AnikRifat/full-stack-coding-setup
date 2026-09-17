@@ -5,7 +5,7 @@ description: Review a code change against its requirements, project conventions,
 
 # Review code
 
-Inspect the requested behavior, diff or affected files, relevant project context, and available checks. Read [review guidance](references/review.md), [coding rules](../../rules/coding.md), and relevant capabilities.
+Inspect the requested behavior, diff or affected files, relevant project context, and available checks. Read [review guidance](references/review.md), [coding rules](../../rules/coding.md), [output rules](../../rules/output.md), and relevant capabilities.
 
 Prioritize correctness, security, data integrity, compatibility, maintainability, and user-visible behavior. Tie each finding to concrete evidence and impact. Do not treat personal style preferences or speculative concerns as defects.
 

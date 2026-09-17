@@ -5,7 +5,7 @@ description: Verify requested software behavior with the most meaningful checks 
 
 # Verify behavior
 
-Inspect the acceptance criteria, affected paths, existing tests, project commands, and environment limits. Read [verification method](references/verify.md) and [coding rules](../../rules/coding.md).
+Inspect the acceptance criteria, affected paths, existing tests, project commands, and environment limits. Read [verification method](references/verify.md) and [coding rules](../../rules/coding.md), [output rules](../../rules/output.md).
 
 Choose checks that exercise the changed behavior and its material guarantees. Prefer existing project tooling and narrow tests before broad suites when that provides sufficient confidence. Add or update tests only when they meaningfully protect the requested behavior.
 

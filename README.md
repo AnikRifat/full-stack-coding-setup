@@ -9,6 +9,7 @@ It is not a project template and it generates no application code by itself. It 
 - **One skill per outcome.** Planning, architecture, implementation, debugging, verification, review, UI, UX, support. Each one names what it owns and what it refuses, so responsibilities do not blur mid-task.
 - **Three autonomous loops** that keep going until a finish line is met, rather than stopping at the first plausible answer.
 - **Shared rules** applied by every engineering skill: understand before changing, keep the change small, keep required guarantees (authorization, money invariants, accessibility, data integrity), and never report an unrun check as passed.
+- **Bounded output.** One rule caps what is read, carried, and reported, so an answer is the finding and its evidence rather than a narration of the work.
 - **Evidence over assertion.** A fix is reported with the evidence that proves the cause, and the limits of what was verified.
 - **Stack defaults with reasons.** Laravel + Blade + Livewire for a new business portfolio, Next.js when the workload actually justifies it, and an existing stack always wins.
 

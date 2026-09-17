@@ -35,7 +35,7 @@ flowchart TD
 
 ## Supporting layers
 
-- [Rules](rules/README.md) contain global constraints such as coding correctness, simplicity, and engineering principles.
+- [Rules](rules/README.md) contain global constraints such as coding correctness, simplicity, engineering principles, and output and context economy.
 - [Capabilities](capabilities/README.md) contain technology-specific knowledge. They are selected from the repository's actual stack and never define a universal workflow.
 - [Commands](commands/README.md) map `$skill-name` triggers to task skills.
 - [Agent roles](agents/README.md) define bounded workers. A skill is a method; an agent is a worker assigned to use one.

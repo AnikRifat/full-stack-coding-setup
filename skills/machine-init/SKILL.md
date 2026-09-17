@@ -7,7 +7,7 @@ description: Inspect and prepare Anik's PC-level Codex or Claude scratch environ
 
 Use this skill for a direct request to prepare this computer's Codex or Claude working environment, or to make a clean scratch workspace for experiments. It is separate from [project-init](../project-init/SKILL.md), which initializes an actual software project.
 
-Read the user profile and [scratch setup](references/scratch-setup.md). Inspect the requested environment before changing it. Work from evidence: discover the installed CLIs, their local help, existing instruction files, workspace locations, and project-independent dependencies. Never assume a Claude configuration format, an active login, or a secret's location.
+Read the user profile, [scratch setup](references/scratch-setup.md), and [output rules](../../rules/output.md). Inspect the requested environment before changing it. Work from evidence: discover the installed CLIs, their local help, existing instruction files, workspace locations, and project-independent dependencies. Never assume a Claude configuration format, an active login, or a secret's location.
 
 Ask the next material question immediately when the requested outcome, target location, shared configuration impact, or authentication requirement is unclear. For a clear direct request, complete the bounded setup and verify the result.
 

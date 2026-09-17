@@ -7,7 +7,7 @@ description: Turn a goal or feature outcome into a goal-driven delivery plan wit
 
 Follow the [sub-agent execution and immediate-question policy](../loop-delivery/references/delegation.md). For a direct request, coordinate useful bounded agents within this skill's scope. When assigned as a worker, execute your bounded task and route questions and evidence to the parent coordinator; do not recursively start another team.
 
-Read the applicable [personal context](../loop-delivery/references/profile.md), [shared handoff contract](../loop-delivery/references/handoff.md), and [planning method](references/plan.md).
+Read the applicable [personal context](../loop-delivery/references/profile.md), [shared handoff contract](../loop-delivery/references/handoff.md), [planning method](references/plan.md), and [output rules](../../rules/output.md).
 
 Receive the goal or MVP brief, repository context, chosen architecture, constraints, and unresolved decisions. Inspect relevant code and project instructions. Reuse existing scope and criteria; read the coordinator's [product method](../loop-delivery/references/product-method.md) for a true missing product decision and [arch-design](../arch-design/SKILL.md) for material structural choices.
 

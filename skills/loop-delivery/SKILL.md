@@ -50,7 +50,7 @@ A skill defines the method; a sub-agent performs an assigned task using it. Thes
 
 ## Apply engineering defaults
 
-Engineering agents apply their task-specific skills with [coding rules](../../rules/coding.md), [simplicity](../../rules/simplicity.md), and [Karpathy-inspired principles](../../rules/engineering-principles.md). Task skills keep architecture, implementation, debugging, verification, review, UI, and UX responsibilities separate. Simplicity preserves requested behavior, security, money invariants, accessibility, and useful checks.
+Engineering agents apply their task-specific skills with [coding rules](../../rules/coding.md), [output rules](../../rules/output.md), [simplicity](../../rules/simplicity.md), and [Karpathy-inspired principles](../../rules/engineering-principles.md). Task skills keep architecture, implementation, debugging, verification, review, UI, and UX responsibilities separate. Simplicity preserves requested behavior, security, money invariants, accessibility, and useful checks.
 
 For a new business portfolio without a chosen stack, default to Laravel + Blade + Livewire using the [Laravel capability](../../capabilities/frameworks/laravel-livewire.md). Consider the [Next.js capability](../../capabilities/frameworks/nextjs.md) when demonstrated scalability and frontend requirements justify it; explain the relevant trade-off. Preserve existing stacks and explicit choices.
 

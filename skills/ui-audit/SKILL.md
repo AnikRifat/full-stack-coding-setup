@@ -9,4 +9,4 @@ Inspect the actual screens, component system, responsive states, and relevant vi
 
 Separate visual or component findings from journey, task-flow, and information-architecture issues; route the latter to [flow-design](../flow-design/SKILL.md). Base findings on the supplied interface and project conventions rather than generic trend advice.
 
-Report actionable findings with affected screen or component, impact, and a practical correction. Do not silently redesign product flows while auditing visual UI.
+Report actionable findings under [output rules](../../rules/output.md), with affected screen or component, impact, and a practical correction. Do not silently redesign product flows while auditing visual UI.

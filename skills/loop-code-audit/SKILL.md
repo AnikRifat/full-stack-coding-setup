@@ -17,7 +17,7 @@ Own the requested engineering outcome: **inspect → audit → synthesize → fi
 
 ## Resolve context and audit
 
-Read [audit method](references/audit-method.md), [severity and evidence](references/severity.md), the applicable [global rules](../../rules/README.md), project instructions, and context-matched capabilities. Inspect scope, runtime, architecture, changed files, tests, commands, persistence, integrations, and known failures before assigning work.
+Read [audit method](references/audit-method.md), [severity and evidence](references/severity.md), the applicable [global rules](../../rules/README.md), [output rules](../../rules/output.md), project instructions, and context-matched capabilities. Inspect scope, runtime, architecture, changed files, tests, commands, persistence, integrations, and known failures before assigning work.
 
 Run [context resolver](agents/context-resolver.md) first. Then delegate independent read-only passes as useful: [correctness reviewer](agents/correctness-reviewer.md), [security reviewer](agents/security-reviewer.md), [performance reviewer](agents/performance-reviewer.md), and [maintainability reviewer](agents/maintainability-reviewer.md), which owns test-coverage evidence. Every assignment includes resolved context, narrow surface, explicit read/write ownership, expected [finding schema](assets/finding.schema.json), and a check. The coordinator deduplicates, ranks, and sequences findings.
 
