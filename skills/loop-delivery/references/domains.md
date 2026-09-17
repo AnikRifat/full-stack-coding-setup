@@ -25,6 +25,16 @@ The examples are not an exhaustive IT taxonomy. Products can have multiple purpo
 
 Apply audience context to the task: explain decisions at the client's level and investigate appropriate user and operator interactions. Do not assume that the client's technical skill represents every user, or reduce needed capabilities just because an audience is nontechnical.
 
+The established product type and business domain also select maintained references that
+other skills already carry. When the work has a user interface, read the matching
+`../../loop-interface-audit/domains/<domain>.md` and
+`../../loop-interface-audit/product-types/<type>.md` — they hold the actors, screens,
+states, and failure patterns for that combination, and they apply whether or not an audit
+loop is running. Available domains: accounts-finance, admin-ops, ecommerce, fintech,
+inventory, logistics, marketplace, saas, generic. Available product types: admin-panel,
+b2b-app, dashboard, mobile-app, storefront. For the structural consequence of the same
+framing, read [architecture selection](../../arch-design/references/selection.md).
+
 Return the framing to the [product method](product-method.md) for scope decisions or [delivery-plan](../../delivery-plan/SKILL.md) for goal-driven execution planning. Actual release readiness still depends on agreed criteria, not classification alone.
 
 ## Questions that change the decision

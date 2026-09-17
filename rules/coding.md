@@ -18,6 +18,11 @@ Anik requested strict coding and development rules on 2026-09-17. These are the 
 9. **Handle failures deliberately.** Do not swallow failures, return fabricated success, or log private payloads to conceal a problem. Define behavior for realistic integration, validation, and data errors. Make externally consequential retries safe according to the actual operation; do not add retry loops without evidence.
 10. **Keep user flows usable.** Preserve needed keyboard interaction, labels, semantic controls, and relevant loading, empty, validation, and failure states. Follow the actual client brand and reference agreement. Do not substitute placeholder content or a visual resemblance score for agreed behavior.
 
+Rules 5 through 8 state obligations, not methods. Read [security](../capabilities/security.md)
+when the work touches authentication, authorization, money, personal data, or file uploads;
+it carries the trust-boundary, tenancy, secret-handling, and payment-integrity detail, and
+the failures that actually reach production in this stack.
+
 ## Development and completion
 
 11. **Keep checks active.** Discover and run the applicable project formatter, lint, type, build, and behavior checks. New meaningful logic or fixes need appropriate observable verification; focused regression coverage should protect a demonstrated failure. Do not add tests that merely restate implementation, or impose test ceremony on reversible low-impact edits.

@@ -36,7 +36,7 @@ flowchart TD
 ## Supporting layers
 
 - [Rules](rules/README.md) contain global constraints such as coding correctness, simplicity, engineering principles, and output and context economy.
-- [Capabilities](capabilities/README.md) contain technology-specific knowledge. They are selected from the repository's actual stack and never define a universal workflow. Currently Laravel + Livewire, Next.js, and databases (PostgreSQL, MySQL, MongoDB).
+- [Capabilities](capabilities/README.md) contain technology-specific knowledge. They are selected from the repository's actual stack and never define a universal workflow. Currently Laravel + Livewire, Next.js, databases (PostgreSQL, MySQL, MongoDB), and security (trust boundaries, authorization, secrets, payment integrity).
 - [Commands](commands/README.md) map `/skill-name` triggers to task skills.
 - [Agent roles](agents/README.md) define bounded workers. A skill is a method; an agent is a worker assigned to use one.
 - [Tools](tools/README.md) are inspected at runtime rather than presumed in the library.

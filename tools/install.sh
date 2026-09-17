@@ -7,7 +7,12 @@
 # Antigravity is skipped when ~/.gemini is absent, so this stays safe on a machine without it.
 set -euo pipefail
 
-src="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/skills"
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+src="$root/skills"
+# Skills link to ../../rules/ and ../../capabilities/. Claude follows the symlink back
+# into this repo and resolves them there; the copies cannot, so those two directories
+# are copied alongside or every such link dangles in Codex and Antigravity.
+shared=(rules capabilities)
 claude="$HOME/.claude/skills"
 copies=("$HOME/.codex/skills")
 [ -d "$HOME/.gemini" ] && copies+=("$HOME/.gemini/config/skills")
@@ -39,4 +44,16 @@ for n in $names; do
   done
 done
 
+for dir in "${copies[@]}"; do
+  base="$(dirname "$dir")"
+  for d in "${shared[@]}"; do
+    [ -d "$root/$d" ] || continue
+    mkdir -p "$base/$d"
+    # Copy contents, not the directory itself: ~/.codex/rules holds default.rules and
+    # other runtime-owned files that are not ours to delete.
+    cp -R "$root/$d/." "$base/$d/"
+  done
+done
+
 echo "installed $(wc -w <<<"$names") skills -> $claude (symlink), ${copies[*]} (copy)"
+echo "shared ${shared[*]} -> copied alongside each copy target"

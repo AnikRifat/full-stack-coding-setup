@@ -4,6 +4,9 @@ Source: Anik asked this skill to own architecture as well as coding across produ
 
 Read [simplicity](../../../rules/simplicity.md) before architecture or dependency decisions. Use the coordinator's [product method](../../loop-delivery/references/product-method.md), [domains.md](../../loop-delivery/references/domains.md), and [coding rules](../../../rules/coding.md) to connect software structure to the actual journey, actors, business rules, and engineering requirements.
 
+Use [selection](selection.md) to move from the product type and business domain to a
+starting shape, and to see what the domain does and does not entitle you to decide.
+
 ## Begin with requirements that change the structure
 
 Establish relevant roles and permissions, data ownership, important invariants, integration boundaries, workload or latency needs, and runtime constraints. Reuse known requirements. Ask about uncertainty that would change a consequential decision instead of collecting a complete architecture questionnaire for a small website.

@@ -30,6 +30,23 @@ Write the findings to one instruction file and make the others point at it. Seve
 
 Then stop. Adoption ends at a verified understanding and a written record. Any code change is a separate request routed to [code-implement](../../code-implement/SKILL.md), [bug-investigate](../../bug-investigate/SKILL.md), or [arch-design](../../arch-design/SKILL.md).
 
+## Establish the framing before the shape
+
+A new project's stack, structure, and first screens all follow from the product type,
+business domain, audience, and core journey. Establish them with
+[domains.md](../../loop-delivery/references/domains.md), then read
+[architecture selection](../../arch-design/references/selection.md) for the starting shape
+and what the domain does not entitle you to decide. Read
+[security](../../../capabilities/security.md) when the project will handle authentication,
+money, personal data, or uploads — the trust boundaries, tenancy scope, and secret layout
+are cheapest to establish before any feature exists, and
+[databases](../../../capabilities/databases.md) when the engine or schema is still open.
+For an interface, the matching `loop-interface-audit/domains/*` and `product-types/*`
+references name the screens and states that product type actually needs.
+
+Do not turn this into a questionnaire. Ask only what would change a decision being made
+now; a portfolio site needs the journey and the brand, not a tenancy model.
+
 ## Scaffolding a new project
 
 Reuse the supplied brief. If the folder is blank and no brief exists, ask what is being built and for whom, then establish the core journey, audience, product type, and domain. Do not invent a demo product merely to initialize something.
